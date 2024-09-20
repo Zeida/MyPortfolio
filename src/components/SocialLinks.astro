@@ -1,0 +1,37 @@
+---
+
+import { LINKEDIN_LINK, GITHUB_LINK, X_LINK, LINKEDIN_SVG_ICON, GITHUB_SVG_ICON, X_SVG_ICON } from '../consts';
+---
+
+<div class="social-links">
+  <a href={LINKEDIN_LINK} target="_blank">
+    <span class="sr-only">Follow me on LinkedIn</span>
+    <div set:html={LINKEDIN_SVG_ICON}></div>
+  </a>
+
+  <a href={GITHUB_LINK} target="_blank">
+    <span class="sr-only">Follow me on Github</span>
+    <div set:html={GITHUB_SVG_ICON}></div>
+  </a>
+
+  <a href={X_LINK} target="_blank">
+    <span class="sr-only">Follow me on X</span>
+    <div set:html={X_SVG_ICON}></div>
+  </a>
+</div>
+
+<style>
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 1em;
+  }
+  .social-links a {
+    text-decoration: none;
+    color: rgb(var(--gray));
+  }
+  .social-links a:hover {
+    color: rgb(var(--gray-dark));
+  }
+</style>

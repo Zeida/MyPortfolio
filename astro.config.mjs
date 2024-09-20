@@ -6,6 +6,6 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://zeida.github.io',
-	base: 'MyPortfolio',
+	base: '/MyPortfolio',
 	integrations: [mdx(), sitemap()],
 });
