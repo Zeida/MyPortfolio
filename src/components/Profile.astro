@@ -1,9 +1,14 @@
 ---
 import SocialLinks from "./SocialLinks.astro";
+heroImage: '/MyPortfolio/blog-placeholder-3.jpg'
 ---
 
 <main>
-  <h1>🧑‍🚀 Hi world, I'm Zeida!</h1>
+  <img src="/MyPortfolio/images/MyPic.png" alt="Girl in a jacket" width="200" height="200">
+  <div class="typewriter">
+    <h1>Hi world, I'm Zeida!</h1>
+  </div>
+  
   <h2>Software Developer</h2>
 
   <p>
@@ -15,3 +20,28 @@ import SocialLinks from "./SocialLinks.astro";
 
 <div class="social-links"><SocialLinks /></div>
 
+<style>
+
+.typewriter h1 {
+  color: #f09606;
+  font-family: monospace;
+  overflow: hidden; 
+  border-right: .15em solid orange; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em;
+  animation: 
+    typing 1.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(245, 154, 9) }
+}
+</style>

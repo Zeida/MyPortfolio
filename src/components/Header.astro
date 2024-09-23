@@ -7,20 +7,15 @@ import ThemeToggleButton from "./ThemeToggleButton.svelte";
 
 <header>
   <nav>
-    <h2><a href="/">{SITE_TITLE}</a></h2>
-
     <div class="internal-links">
       <ViewTransitions />
-      <HeaderLink href="/MyPortfolio/">Home</HeaderLink>
-      <HeaderLink href="/MyPortfolio/blog">Blog</HeaderLink>
-      <HeaderLink href="/MyPortfolio/about">About</HeaderLink>
+      <HeaderLink href="/MyPortfolio/">About me</HeaderLink>
+      <HeaderLink href="/MyPortfolio/blog">Posts</HeaderLink>
     </div>
     <div class="theme-toggle-container">
       <ThemeToggleButton client:load />
     </div>
   </nav>
-
- 
 </header>
 
 <style>
@@ -30,15 +25,7 @@ import ThemeToggleButton from "./ThemeToggleButton.svelte";
     background: white;
     box-shadow: 0 2px 8px rgba(var(--black), 5%);
   }
-  h2 {
-    margin: 0;
-    font-size: 1em;
-  }
-
-  h2 a,
-  h2 a.active {
-    text-decoration: none;
-  }
+ 
   nav {
     display: flex;
     align-items: center;
@@ -54,13 +41,5 @@ import ThemeToggleButton from "./ThemeToggleButton.svelte";
     text-decoration: none;
     border-bottom-color: var(--accent);
   }
-  .social-links,
-  .social-links a {
-    display: flex;
-  }
-  @media (max-width: 720px) {
-    .social-links {
-      display: none;
-    }
-  }
+
 </style>
