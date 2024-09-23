@@ -1,0 +1,30 @@
+---
+import PortfolioContent from "./PortfolioContent.astro";
+import Profile from "./Profile.astro";
+---
+
+<div class="home-container">
+  <div class="home-item">
+    <Profile />
+  </div>
+  <div class="home-item">
+    <PortfolioContent />
+  </div>
+</div>
+
+<style>
+  .home-container {
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: fit-content(40%) fit-content(50%);
+    background-color:transparent;
+    padding: 10px;
+  }
+
+  .home-item {
+    background-color:transparent;
+    padding: 20px;
+    font-size: 10px;
+    text-align: center;
+  }
+</style>

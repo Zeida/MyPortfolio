@@ -1,14 +1,16 @@
 ---
 const today = new Date();
 import { LINKEDIN_LINK, GITHUB_LINK, X_LINK } from "../consts";
-import { LINKEDIN_SVG_ICON, GITHUB_SVG_ICON, X_SVG_ICON } from "../consts";
-import SocialLinks from '../components/SocialLinks.astro'; 
-
+import {
+  LINKEDIN_SVG_ICON,
+  GITHUB_SQUARE_SVG_ICON,
+  X_SVG_ICON,
+} from "../consts";
+import SocialLinks from "../components/SocialLinks.astro";
 ---
 
 <footer>
   &copy; {today.getFullYear()} Zeida Rguez. Mendoza. All rights reserved.
-  <SocialLinks/>
 </footer>
 
 <style>
@@ -18,5 +20,17 @@ import SocialLinks from '../components/SocialLinks.astro';
     color: rgb(var(--gray));
     text-align: center;
   }
-  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 1em;
+  }
+  .social-links a {
+    text-decoration: none;
+    color: rgb(var(--gray));
+  }
+  .social-links a:hover {
+    color: rgb(var(--gray-dark));
+  }
 </style>
