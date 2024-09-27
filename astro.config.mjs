@@ -5,9 +5,11 @@ import sitemap from '@astrojs/sitemap';
 
 import svelte from '@astrojs/svelte';
 
+import tailwind from '@astrojs/tailwind';
+
 // https://astro.build/config
 export default defineConfig({
     site: 'https://zeida.github.io',
     base: '/MyPortfolio',
-    integrations: [mdx(), sitemap(), svelte()],
+    integrations: [mdx(), sitemap(), svelte(), tailwind()],
 });
