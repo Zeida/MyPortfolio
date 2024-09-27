@@ -5,101 +5,113 @@
 	--primary-color: #231154;
 	--font-family-serif: Merriweather, serif;
 	--font-family-sans: 'Fira Sans', sans-serif;
-  }
-  
-  :root.theme-dark {
+}
+
+:root.theme-dark {
 	--background-body: #030524;
 	--text-main: hsl(42, 38%, 66%);
 	--text-secondary: #0d0740;
 	--primary-color: #93e004b9;
-  }
-  
-  html {
-	overflow-y: scroll;
-  }
-  
-  @supports (scrollbar-gutter: stable) {
-	html {
-	  overflow-y: auto;
-	  scrollbar-gutter: stable;
-	}
-  }
+}
 
-  body {
+html {
+	overflow: scroll;
+	scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+	width: 0px;
+	background: transparent;
+	/* make scrollbar transparent */
+}
+
+@supports (scrollbar-gutter: stable) {
+	html {
+		overflow-y: auto;
+		scrollbar-gutter: stable;
+	}
+}
+
+body {
 	margin: 0;
 	font-family: var(--font-family-serif);
 	font-size: 16px;
 	line-height: 2.9;
 	background-color: var(--background-body);
 	color: var(--text-main);
-	margin-bottom:50px;
-	
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+	margin-bottom: 50px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-family: var(--font-family-sans);
 	font-weight: 700;
 	line-height: 1.2;
 	margin: 0 0 0.5em 0;
-  }
-  
-  h1 {
+}
+
+h1 {
 	font-family: var(--font-family-serif);
 	font-size: 4em;
 	margin: 0 0 1em 0;
-  }
-  
-  h2 {
+}
+
+h2 {
 	margin: 1.6em 0 0 0;
 	font-size: 1.8em;
-  }
-  
-  h3 {
+}
+
+h3 {
 	font-size: 1.5em;
-  }
-  
-  h4 {
+	margin: 1.0em 0;
+}
+
+h4 {
 	font-size: 1.4em;
-  }
-  
-  h5 {
+}
+
+h5 {
 	font-size: 1.3em;
-  }
-  
-  h6 {
+}
+
+h6 {
 	font-size: 1.2em;
-  }
-  
-  p,
-  ul,
-  ol {
-	font-size: 1.3rem;
+}
+
+p,
+ul,
+ol {
+	font-size: 1rem;
 	line-height: 1.75em;
 	margin: 1.2em 0;
-  }
-  
-  ol,
-  ul {
+}
+
+ol,
+ul {
 	padding-left: 2rem;
 	-webkit-padding-start: 5%;
 	-webkit-padding-end: 5%;
-  }
-  
-  li {
+}
+
+li {
 	margin: 1rem 0;
-  }
-  
-  img {
+}
+
+img {
 	max-width: 100%;
 	height: auto;
-  }
+}
 
-  .theme-toggle {
+section {
+	scroll-behavior: smooth;
+	overflow-y: auto;
+}
+
+.theme-toggle {
 	display: inline-flex;
 	align-items: center;
 	height: 100%;
@@ -109,14 +121,14 @@
 	gap: 0.6em;
 	border-radius: 99em;
 	background-color: var(--theme-code-inline-bg);
-  }
-  
-  .theme-toggle > label:focus-within {
+}
+
+.theme-toggle>label:focus-within {
 	outline: 2px solid transparent;
 	box-shadow: 0 0 0 0.08em var(--theme-accent), 0 0 0 0.12em white;
-  }
-  
-  .theme-toggle > label {
+}
+
+.theme-toggle>label {
 	color: var(--theme-code-inline-text);
 	position: relative;
 	display: flex;
@@ -124,14 +136,14 @@
 	justify-content: center;
 	opacity: 0.5;
 	cursor: pointer;
-  }
-  
-  .theme-toggle .checked {
+}
+
+.theme-toggle .checked {
 	color: var(--theme-accent);
 	opacity: 1;
-  }
-  
-  input[name='theme-toggle'] {
+}
+
+input[name='theme-toggle'] {
 	position: right;
 	opacity: 0;
 	top: 0;
@@ -139,50 +151,52 @@
 	bottom: 0;
 	left: 0;
 	z-index: -1;
-  }
-  
-  @media (max-width: 1020px) {
+}
+
+@media (max-width: 1020px) {
 	h1 {
-	  font-size: 3em;
+		font-size: 3em;
 	}
-  
+
 	.content h1 {
-	  font-size: 2.4em;
+		font-size: 2.4em;
 	}
-  }
-  
-  @media (max-width: 480px) {
+}
+
+@media (max-width: 480px) {
 	body {
-	  font-size: 14px;
+		font-size: 14px;
 	}
-  
+
 	p,
 	ul,
 	ol {
-	  font-size: 1.2rem;
-	  margin: 1em 0;
+		font-size: 1.2rem;
+		margin: 1em 0;
 	}
-  }
-  
-  footer {
-    position: relative;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: var(--text-main);
-    text-align: center;
-  }
+}
 
-  .social-links {
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-    margin-top: 1em;
-  }
-  .social-links a {
-    text-decoration: none;
-    color: rgb(var(--gray));
-  }
-  .social-links a:hover {
-    color: rgb(var(--gray-dark));
-  }
+footer {
+	position: relative;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	color: var(--text-main);
+	text-align: center;
+}
+
+.social-links {
+	display: flex;
+	justify-content: center;
+	gap: 1em;
+	margin-top: 1em;
+}
+
+.social-links a {
+	text-decoration: none;
+	color: rgb(var(--gray));
+}
+
+.social-links a:hover {
+	color: rgb(var(--gray-dark));
+}

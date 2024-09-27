@@ -1,10 +1,11 @@
 ---
 import SocialLinks from "./SocialLinks.astro";
-heroImage: '/MyPortfolio/blog-placeholder-3.jpg'
+heroImage: '/MyPortfolio/blog-placeholder-3.jpg';
+import { Image } from 'astro:assets';
 ---
 
 <main>
-  <img src="/MyPortfolio/images/MyPic.png" alt="Girl in a jacket" width="200" height="200">
+  <Image src="/MyPortfolio/images/MyPic.png" alt="Girl in a jacket" width="150" height="100" loading="eager" />
   <div class="typewriter">
     <h1>Hi world, I'm Zeida!</h1>
   </div>
@@ -14,7 +15,7 @@ heroImage: '/MyPortfolio/blog-placeholder-3.jpg'
   <p>
     I'm experienced in back-end (Java, Spring Boot) and front-end (Angular,
     React). Passionate about innovation and building solutions that make an
-    impact. I love working in teams where creativity and collaboration thrive."
+    impact. I love working in teams where creativity and collaboration thrive.
   </p>
 </main>
 
