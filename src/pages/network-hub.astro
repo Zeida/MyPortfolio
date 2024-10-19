@@ -1,20 +1,30 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import NetworkHubComponent from "../components/NetworkHub.astro";
+---
 
----
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import NetworkHubComponent from '../components/NetworkHub.astro';
----
 <!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead title="Zeida | Network Hub" description="Connect with me on social networks!" />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<NetworkHubComponent /> 
-		</main>
-		<Footer />
-	</body>
+  <head>
+    <BaseHead
+      title="Zeida | Network Hub"
+      description="Connect with me on social networks!"
+    />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <h2 class="text-center mb-4" style="color: var(--accent-dark);">
+        ✨ Let's Connect!
+      </h2>
+      <p class="text-center" style="color: var(--accent);">
+        I'd love to hear from you! Feel free to drop a message or ask me
+        anything on my social media.
+      </p>
+      <NetworkHubComponent />
+    </main>
+    <Footer />
+  </body>
 </html>
