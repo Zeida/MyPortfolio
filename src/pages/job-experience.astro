@@ -2,19 +2,22 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
-import HomeProfile from "../components/HomeProfile.astro";
+import JobExperienceComponent from "../components/JobExperience.astro";
+import { jobs } from "../consts";
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <BaseHead
+      title="Job Experience"
+      description="Details of my job experience"
+    />
   </head>
   <body>
     <Header />
     <main>
-      <HomeProfile />
+      <JobExperienceComponent jobs={jobs} />
     </main>
     <Footer />
   </body>

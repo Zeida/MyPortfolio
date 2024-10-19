@@ -1,40 +1,33 @@
-/*
-  The CSS in this style tag is based off of Bear Blog's default CSS.
-  https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
-  License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
- */
+:root {
+   --bg-light: #f2cc8f;
+   --text-light: #3d405b;
+   --text-secondary-light: #777777;
+   --border-light: #e07a5f;
+   --highlight-light: #81b29a;
 
- :root {
-	/* Tema Claro */
- --bg-light: #f2cc8f; /* Beige suave */
- --text-light: #3d405b; /* Texto principal */
- --text-secondary-light: #777777; /* Texto secundario */
- --border-light: #e07a5f; /* Borde */
- --highlight-light: #81b29a; /* Manteniendo azul suave para destacar */
- 
- --accent-light: #ff6f61; /* Color coral para destacar */
- --accent: #04395e; /* Azul suave como acento */
- --accent-dark: #031d44; /* Azul más oscuro como acento oscuro */
+   --accent-light: #ff6f61;
+   --accent: #04395e;
+   --accent-dark: #031d44;
 
- --gray-light: #d9d9d9; /* Gris claro */
- --gray-dark: #7f7f7f; /* Gris oscuro */
+   --gray-light: #d9d9d9;
+   --gray-dark: #7f7f7f;
 }
 
 html.dark {
- /* Tema Oscuro */
- background-color: #1d3557;
- color: #f4f1de;
- --bg-dark: #1d3557; /* Fondo oscuro */
- --text-dark: #f4f1de; /* Texto principal */
- --text-secondary-dark: #e9d8a6; /* Texto secundario */
- --border-dark: #621708; /* Borde */
- --highlight-dark: #f6aa1c; /* Amarillo dorado para destacar */
+   /* Tema Oscuro */
+   background-color: #1d3557;
+   color: #f4f1de;
+   --bg-dark: #1d3557;
+   --text-dark: #f4f1de;
+   --text-secondary-dark: #e9d8a6;
+   --border-dark: #621708;
+   --highlight-dark: #f6aa1c;
 
- --accent: #031d44; /* Amarillo dorado para acentos */
- --accent-dark: #031d44; /* Amarillo más oscuro como acento oscuro */
+   --accent: #031d44;
+   --accent-dark: #031d44;
 
- --gray-light: #4a4a4a; /* Gris claro para el tema oscuro */
- --gray-dark: #b0b0b0; /* Gris oscuro para el tema oscuro */
+   --gray-light: #4a4a4a;
+   --gray-dark: #b0b0b0;
 }
 
 @font-face {
@@ -44,6 +37,7 @@ html.dark {
    font-style: normal;
    font-display: swap;
 }
+
 @font-face {
    font-family: 'Atkinson';
    src: url('/MyPortfolio/fonts/atkinson-bold.woff') format('woff');
@@ -57,11 +51,11 @@ body {
    margin: 0;
    padding: 0;
    text-align: left;
-   background: linear-gradient(var(--gray-light)) no-repeat; /* Cambiado a usar --gray-light */
+   background: linear-gradient(var(--gray-light)) no-repeat;
    background-size: 100% 600px;
    word-wrap: break-word;
    overflow-wrap: break-word;
-   color: rgb(var(--gray-dark)); /* Cambiado a usar --gray-dark */
+   color: rgb(var(--gray-dark));
    font-size: 18px;
    line-height: 1.7;
 }
@@ -80,22 +74,26 @@ h4,
 h5,
 h6 {
    margin: 0 0 0.5rem 0;
-   color: rgb(var(--gray-dark)); /* Cambiado a usar --gray-dark */
+   color: rgb(var(--gray-dark));
    line-height: 1.2;
 }
 
 h1 {
    font-size: 3.052em;
 }
+
 h2 {
    font-size: 2.441em;
 }
+
 h3 {
    font-size: 1.953em;
 }
+
 h4 {
    font-size: 1.563em;
 }
+
 h5 {
    font-size: 1.25em;
 }
@@ -108,6 +106,7 @@ b {
 a {
    color: var(--accent);
 }
+
 a:hover {
    color: var(--accent-light);
 }
@@ -115,6 +114,7 @@ a:hover {
 p {
    margin-bottom: 1em;
 }
+
 .prose p {
    margin-bottom: 2em;
 }
@@ -123,46 +123,55 @@ textarea {
    width: 100%;
    font-size: 16px;
 }
+
 input {
    font-size: 16px;
 }
+
 table {
    width: 100%;
 }
+
 img {
    max-width: 100%;
    height: auto;
    border-radius: 8px;
 }
+
 code {
    padding: 2px 5px;
-   background-color: rgb(var(--gray-light)); /* Cambiado a usar --gray-light */
+   background-color: rgb(var(--gray-light));
    border-radius: 2px;
 }
+
 pre {
    padding: 1.5em;
    border-radius: 8px;
 }
-pre > code {
+
+pre>code {
    all: unset;
 }
+
 blockquote {
    border-left: 4px solid var(--accent);
    padding: 0 0 0 20px;
    margin: 0px;
    font-size: 1.333em;
 }
+
 hr {
    border: none;
-   border-top: 1px solid rgb(var(--gray-light)); /* Cambiado a usar --gray-light */
+   border-top: 1px solid rgb(var(--gray-light));
 }
 
 @media (max-width: 720px) {
    body {
-	   font-size: 15px;
+      font-size: 15px;
    }
+
    main {
-	   padding: 1em;
+      padding: 1em;
    }
 }
 
@@ -174,13 +183,9 @@ hr {
    height: 1px;
    width: 1px;
    overflow: hidden;
-   /* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
    clip: rect(1px 1px 1px 1px);
-   /* maybe deprecated but we need to support legacy browsers */
    clip: rect(1px, 1px, 1px, 1px);
-   /* modern browsers, clip-path works inwards from each corner */
    clip-path: inset(50%);
-   /* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
    white-space: nowrap;
 }
 
@@ -188,13 +193,13 @@ hr {
 header {
    margin: 0;
    padding: 0 1em;
-   background: var(--bg-light); /* Cambia a color de fondo del tema claro */
-   color: var(--text-light); /* Cambia a color de texto del tema claro */
+   background: var(--bg-light);
+   color: var(--text-light);
 }
 
 html.dark header {
-   background: var(--accent-dark); /* Cambia a color de fondo del tema oscuro */
-   color: var(--text-dark); /* Cambia a color de texto del tema oscuro */
+   background: var(--accent-dark);
+   color: var(--text-dark);
 }
 
 h2 {
@@ -206,48 +211,53 @@ h2 a,
 h2 a.active {
    text-decoration: none;
 }
+
 nav {
    display: flex;
    align-items: center;
    justify-content: space-between;
 }
+
 nav a {
    padding: 1em 0.5em;
    color: var(--black);
    border-bottom: 2px solid transparent;
    text-decoration: none;
 }
+
 nav a.active {
    text-decoration: none;
    border-bottom-color: var(--accent);
 }
+
 .social-links,
 .social-links a {
    display: flex;
 }
+
 @media (max-width: 720px) {
    .social-links {
-	   display: none;
+      display: none;
    }
 }
 
 /* Estilos del footer */
 footer {
-    padding: 1em 1em 1em 1em;
-    background: var(--bg-light); /* Cambia a color de fondo del tema claro */
-    color: var(--text-light); /* Cambia a color de texto del tema claro */
-    text-align: center;
-    bottom: 0; 
+   padding: 1em 1em 1em 1em;
+   background: var(--bg-light);
+   color: var(--text-light);
+   text-align: center;
+   bottom: 0;
 }
 
 html.dark footer {
-    background: var(--accent-dark); /* Cambia a color de fondo del tema oscuro */
-    color: var(--text-dark); /* Cambia a color de texto del tema oscuro */
+   background: var(--accent-dark);
+   color: var(--text-dark);
 }
 
 .hero-image {
-   width: 100%; /* Ancho completo */
-   max-width: 800px; /* Cambia esto al tamaño que desees */
-   height: auto; /* Mantiene la relación de aspecto de la imagen */
-   margin: 0 auto; /* Centra la imagen */
+   width: 100%;
+   max-width: 800px;
+   height: auto;
+   margin: 0 auto;
 }

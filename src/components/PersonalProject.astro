@@ -1,0 +1,12 @@
+---
+// ProjectCard.astro
+const { title, description, technologies, githubLink, documentationLink } = Astro.props;
+---
+
+<div class="project-card border border-gray-300 rounded-lg p-6 m-4" style="background-color: var(--background-soft);">
+    <h3>{title}</h3>
+    <p>{description}</p>
+    <p><strong>Technologies Used:</strong> {technologies.join(', ')}</p>
+    <a href={githubLink} target="_blank" class="github-link"> Dive into the Code! 👩‍💻</a><br>
+    <a href={documentationLink} target="_blank" class="documentation-link">Access Documentation📚</a>
+</div>

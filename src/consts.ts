@@ -24,3 +24,65 @@ export const GITHUB_SVG_ICON = `
 export const X_SVG_ICON = `<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 24 24">
 <path d="M 2.3671875 3 L 9.4628906 13.140625 L 2.7402344 21 L 5.3808594 21 L 10.644531 14.830078 L 14.960938 21 L 21.871094 21 L 14.449219 10.375 L 20.740234 3 L 18.140625 3 L 13.271484 8.6875 L 9.2988281 3 L 2.3671875 3 z M 6.2070312 5 L 8.2558594 5 L 18.033203 19 L 16.001953 19 L 6.2070312 5 z"></path>
 </svg>`;
+
+export const jobs = [
+    {
+      title: "Programmer Analyst",
+      company: "Bitbox S.L",
+      dates: "February 2021 - November 2022",
+      description: "At Bitbox S.L, I honed my analytical skills while engaging in requirements gathering, functional design, and documentation. My role involved:",
+      responsibilities: [
+        "Developing back-end solutions using Spring Boot and PostgreSQL, ensuring high performance and responsiveness.",
+        "Creating dynamic user interfaces with React, enhancing user experience through intuitive design.",
+        "Collaborating with cross-functional teams to deliver projects on time and meet client expectations."
+      ]
+    },
+    {
+      title: "Programmer",
+      company: "Plexus Tech",
+      dates: "November 2022 - May 2024",
+      description: "As a Programmer at Plexus Tech, I contributed to the development and maintenance of Platino, the interoperability platform for the Government of Canarias. My key responsibilities included:",
+      responsibilities: [
+        "Implementing front-end enhancements using Angular, improving usability and functionality.",
+        "Developing back-end services with Java 8 and participating in the migration to Red Hat Fuse 7.",
+        "Updating and migrating servers to optimize system performance and security."
+      ]
+    }
+  ];
+
+export const projects = [
+    {
+        title: 'MindCare',
+        description: 'For my final degree project, I developed a software tool that addresses the crucial role of emotional well-being in our daily lives. Understanding that our emotional state can influence our ability to think, feel, and act, this application leverages technology to promote personal well-being. MindCare offers a variety of resources for self-care, emotional support, and social interaction, all enhanced with a unique badge system that motivates users in their personal growth journey. Additionally, it serves as a valuable resource for professionals in therapeutic processes, supporting the promotion of healthy habits.',
+        technologies: [
+            'Marvel App',
+            'Visual Studio Code',
+            'Android Studio',
+            'GitHub',
+            'Expo',
+            'Firebase',
+            'Firestore',
+            'Firebase Authentication',
+            'Microsoft Word',
+            'StarUML',
+            'React Native'
+        ],
+        githubLink:'https://github.com/Zeida/MindCare' ,
+        documentationLink: 'https://accedacris.ulpgc.es/bitstream/10553/117753/1/P%c3%a1ginas%20desdeEII-GII-2022-07_RodriguezMendozaZeida.pdf'
+    },
+
+];
+
+export const technologies = [
+    { name: 'Marvel App', link: 'https://marvelapp.com/', icon: 'https://img.shields.io/badge/Marvel%20App-1.0-FF4081?style=flat-square' },
+    { name: 'Visual Studio Code', link: 'https://code.visualstudio.com/', icon: 'https://img.shields.io/badge/VS%20Code-1.78.0-blue?style=flat-square&logo=visualstudiocode' },
+    { name: 'Android Studio', link: 'https://developer.android.com/studio', icon: 'https://img.shields.io/badge/Android%20Studio-2023.1-3DDC84?style=flat-square&logo=androidstudio' },
+    { name: 'GitHub', link: 'https://github.com/', icon: 'https://img.shields.io/badge/GitHub-Profile-black?style=flat-square&logo=github' },
+    { name: 'Expo', link: 'https://expo.dev/', icon: 'https://img.shields.io/badge/Expo-48.0.0-000000?style=flat-square&logo=expo' },
+    { name: 'Firebase', link: 'https://firebase.google.com/', icon: 'https://img.shields.io/badge/Firebase-11.0.0-yellow?style=flat-square&logo=firebase' },
+    { name: 'Firestore', link: 'https://firebase.google.com/products/firestore', icon: 'https://img.shields.io/badge/Firestore-11.0.0-blue?style=flat-square&logo=firestore' },
+    { name: 'Firebase Authentication', link: 'https://firebase.google.com/docs/auth', icon: 'https://img.shields.io/badge/Firebase%20Auth-11.0.0-orange?style=flat-square&logo=firebase' },
+    { name: 'Microsoft Word', link: 'https://www.microsoft.com/en-us/microsoft-365/word', icon: 'https://img.shields.io/badge/Microsoft%20Word-2021-2B579A?style=flat-square&logo=microsoftword' },
+    { name: 'StarUML', link: 'http://staruml.io/', icon: 'https://img.shields.io/badge/StarUML-3.0-blue?style=flat-square&logo=staruml' },
+    { name: 'React Native', link: 'https://reactnative.dev/', icon: 'https://img.shields.io/badge/React%20Native-0.72.3-61DAFB?style=flat-square&logo=react' },
+];

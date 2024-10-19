@@ -1,0 +1,109 @@
+---
+import {
+  LINKEDIN_LINK,
+  GITHUB_LINK,
+  X_LINK,
+  LINKEDIN_SVG_ICON,
+  GITHUB_ROUND_SVG_ICON,
+  X_SVG_ICON,
+  GOODREADS_LINK,
+  GOODREADS_SVG_ICON,
+  DISCORD_LINK,
+  DISCORD_SVG_ICON,
+  INSTAGRAM_SVG_ICON,
+  INSTAGRAM_LINK,
+  OUTLOOK_SVG_ICON,
+  OUTLOOK_LINK,
+} from "../const/constants";
+---
+
+<div class="profile-cards">
+  <div class="card">
+    <a href={LINKEDIN_LINK} target="_blank" class="social-link">
+      <div set:html={LINKEDIN_SVG_ICON} class="icon" />
+      <span>LinkedIn</span>
+    </a>
+  </div>
+
+  <div class="card">
+    <a href={GITHUB_LINK} target="_blank" class="social-link">
+      <div set:html={GITHUB_ROUND_SVG_ICON} class="icon" />
+      <span>GitHub</span>
+    </a>
+  </div>
+
+  <div class="card">
+    <a href={X_LINK} target="_blank" class="social-link">
+      <div set:html={X_SVG_ICON} class="icon" />
+      <span>X</span>
+    </a>
+  </div>
+
+  <div class="card">
+    <a href={OUTLOOK_LINK} target="_blank" class="social-link">
+      <div set:html={OUTLOOK_SVG_ICON} class="icon" />
+      <span>Outlook</span>
+    </a>
+  </div>
+
+  <div class="card">
+    <a href={DISCORD_LINK} target="_blank" class="social-link">
+      <div set:html={DISCORD_SVG_ICON} class="icon" />
+      <span>Discord</span>
+    </a>
+  </div>
+
+  <div class="card">
+    <a href={INSTAGRAM_LINK} target="_blank" class="social-link">
+      <div set:html={INSTAGRAM_SVG_ICON} class="icon" />
+      <span>Instagram</span>
+    </a>
+  </div>
+
+  <div class="card">
+    <a href={GOODREADS_LINK} target="_blank" class="social-link">
+      <div set:html={GOODREADS_SVG_ICON} class="icon" />
+      <span>Goodreads</span>
+    </a>
+  </div>
+</div>
+
+<style>
+  .profile-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 1em;
+  }
+
+  .card {
+    background-color: rgb(var(--white));
+    border: 1px solid rgb(var(--gray-light));
+    border-radius: 8px;
+    padding: 1em;
+    text-align: center;
+    transition: box-shadow 0.3s;
+    width: 150px; /* Ajusta el tamaño de la tarjeta según sea necesario */
+  }
+
+  .card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .social-link {
+    text-decoration: none;
+    color: rgb(var(--gray));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-link:hover {
+    color: rgb(var(--gray-dark));
+  }
+
+  .icon {
+    margin-bottom: 0.5em; /* Espaciado entre icono y texto */
+  }
+</style>
