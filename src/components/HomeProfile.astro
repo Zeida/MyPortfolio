@@ -1,0 +1,105 @@
+---
+import SocialLinks from "./SocialLinks.astro";
+heroImage: "/MyPortfolio/blog-placeholder-3.jpg";
+import { Image } from "astro:assets";
+---
+
+<main>
+  <div class="profile">
+    <div class="myPic">
+      <Image
+        src="/MyPortfolio/src/images/myPic.png"
+        alt="Girl"
+        width="150"
+        height="100"
+        loading="eager"
+      />
+    </div>
+    <div class="typewriter">
+      <h1 class="h1-greeting">Hi world, I'm Zeida!</h1>
+    </div>
+
+    <h2>Software Developer</h2>
+
+    <p>
+      I'm experienced in back-end (Java, Spring Boot) and front-end (Angular,
+      React). Passionate about innovation and building solutions that make an
+      impact. I love working in teams where creativity and collaboration thrive.
+    </p>
+  </div>
+
+  <div class="social-links">
+    <SocialLinks />
+  </div>
+</main>
+
+<style>
+  /*Código para el efecto de typing en el saludo. */
+  .profile {
+    display: flex; /* Habilitar flexbox */
+    flex-direction: column; /* Alinear en columna */
+    align-items: center; /* Centrar elementos horizontalmente */
+    text-align: center; /* Alinear texto de los párrafos al centro */
+  }
+
+  .myPic {
+    margin: 0 auto; /* Centrar la imagen */
+  }
+
+  .typewriter {
+    display: inline-block;
+    overflow: hidden;
+    margin-top: 15px; /* Espacio arriba del saludo */
+  }
+
+  .typewriter h1 {
+    color: #f09606;
+    font-family: var(--font-family-serif);
+    font-size: 1.7em;
+    font-family: monospace;
+    overflow: hidden;
+    border-right: 0.15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: 0.15em;
+    animation: typing 1.5s steps(30, end), blink-caret 0.5s step-end infinite;
+  }
+
+  h2 {
+    font-size: 1.1em;
+    align-self: flex-end; /* Alinear h2 a la derecha */
+    text-align: right; /* Alinear texto a la derecha */
+    width: 100%; /* Permitir que ocupe el ancho completo para alinear a la derecha */
+    margin-top: 20px; /* Aumentar el espacio arriba del h2 */
+    margin-bottom: 0.5em; /* Reducir el espacio abajo del h2 */
+  }
+
+  p {
+    margin: 0.5em 0; /* Espaciado reducido alrededor del párrafo */
+  }
+
+  .social-links {
+    display: flex; /* Habilitar flexbox para los enlaces sociales */
+    justify-content: center; /* Centrar horizontalmente */
+    margin-top: 1.5em; /* Espacio arriba de los enlaces sociales */
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: rgb(245, 154, 9);
+    }
+  }
+</style>

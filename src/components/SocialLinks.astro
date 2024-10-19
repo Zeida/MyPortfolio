@@ -1,22 +1,49 @@
 ---
-
-import { LINKEDIN_LINK, GITHUB_LINK, X_LINK, LINKEDIN_SVG_ICON, GITHUB_SVG_ICON, X_SVG_ICON } from '../consts';
+import {
+  LINKEDIN_LINK,
+  GITHUB_LINK,
+  X_LINK,
+  LINKEDIN_SVG_ICON,
+  GITHUB_ROUND_SVG_ICON,
+  X_SVG_ICON,
+  GOODREADS_LINK,
+  GOODREADS_SVG_ICON,
+  DISCORD_LINK,
+  DISCORD_SVG_ICON,
+  INSTAGRAM_SVG_ICON,
+  INSTAGRAM_LINK,
+  OUTLOOK_SVG_ICON,
+  OUTLOOK_LINK,
+} from "../const/constants";
 ---
 
 <div class="social-links">
   <a href={LINKEDIN_LINK} target="_blank">
-    <span class="sr-only">Follow me on LinkedIn</span>
-    <div set:html={LINKEDIN_SVG_ICON}></div>
+    <div set:html={LINKEDIN_SVG_ICON} />
   </a>
 
   <a href={GITHUB_LINK} target="_blank">
-    <span class="sr-only">Follow me on Github</span>
-    <div set:html={GITHUB_SVG_ICON}></div>
+    <div set:html={GITHUB_ROUND_SVG_ICON} />
   </a>
 
   <a href={X_LINK} target="_blank">
-    <span class="sr-only">Follow me on X</span>
-    <div set:html={X_SVG_ICON}></div>
+    <div set:html={X_SVG_ICON} />
+  </a>
+
+  <a href={OUTLOOK_LINK} target="_blank">
+    <div set:html={OUTLOOK_SVG_ICON} />
+  </a>
+
+  <a href={DISCORD_LINK} target="_blank">
+    <div set:html={DISCORD_SVG_ICON} />
+  </a>
+
+  <a href={INSTAGRAM_LINK} target="_blank">
+    <div set:html={INSTAGRAM_SVG_ICON} />
+  </a>
+
+  <a href={GOODREADS_LINK} target="_blank">
+    <div set:html={GOODREADS_SVG_ICON} />
   </a>
 </div>
 
