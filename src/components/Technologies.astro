@@ -3,35 +3,43 @@ const { technologies } = Astro.props;
 ---
 
 <section class="technologies">
-    <h3>Technologies Used:</h3>
-    <div class="tech-icons">
-        {technologies.map(tech => (
-            <a href={tech.link} target="_blank" rel="noopener noreferrer" class="tech-icon" title={tech.name}>
-                <img src={tech.icon} alt={tech.name} />
-            </a>
-        ))}
-    </div>
+  <h3>Technologies Used:</h3>
+  <div class="tech-icons">
+    {
+      technologies.map((tech) => (
+        <a
+          href={tech.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="tech-icon"
+          title={tech.name}
+        >
+          <img src={tech.icon} alt={tech.name} />
+        </a>
+      ))
+    }
+  </div>
 </section>
 
 <style>
-    .technologies {
-        margin: 2rem 0;
-    }
+  .technologies {
+    margin: 2rem 0;
+  }
 
-    .tech-icons {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
+  .tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
 
-    .tech-icon img {
-        width: 100px; /* Ajusta el tamaño según sea necesario */
-        height: auto;
-        border-radius: 8px; /* Redondear esquinas */
-        transition: transform 0.2s;
-    }
+  .tech-icon img {
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    border-radius: 8px; /* Redondear esquinas */
+    transition: transform 0.2s;
+  }
 
-    .tech-icon:hover img {
-        transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
-    }
+  .tech-icon:hover img {
+    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+  }
 </style>

@@ -1,0 +1,95 @@
+---
+import { ACADEMIC_DATA } from "../consts";
+
+const educationData = ACADEMIC_DATA;
+---
+
+<div class="education-container">
+  <h2 class="text-center mb-4">My Academic Journey</h2>
+
+  <div class="education">
+    {educationData.education.map(degree => (
+      <div class="degree">
+        <h3>{degree.title}</h3>
+        <h4>{degree.specialization}</h4>
+        <p><em>{degree.years}</em></p>
+        <p>{degree.description}</p>
+      </div>
+    ))}
+  </div>
+
+  <div class="certifications">
+    <h2 class="text-center mb-4">Certifications</h2>
+    {educationData.certifications.map(certification => (
+      <div class="certification">
+        <h3>{certification.title}</h3>
+        <h4>{certification.institution}</h4>
+        <p><em>{certification.date}</em></p>
+        <p>{certification.description}</p>
+      </div>
+    ))}
+
+    <h2 class="text-center mb-4">Courses</h2>
+    {educationData.courses.map(course => (
+      <div class="courses">
+        <h3>{course.title}</h3>
+        <h4>{course.institution}</h4>
+        <p><em>{course.dates}</em></p>
+        <p>{course.description}</p>
+        <ul>
+          {course.details.map(detail => (
+            <li>{detail}</li>
+          ))}
+        </ul>
+      </div>
+    ))}
+  </div>
+</div>
+
+<style>
+  .education-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em 0;
+  }
+
+  .degree, .certification, .courses {
+    background-color: var(--background-soft);
+    border: 1px solid var(--gray-light);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 600px; /* Máximo ancho de la tarjeta */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+
+  .degree:hover, .certification:hover, .courses:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  h3 {
+    color: var(--accent);
+    margin-bottom: 5px;
+  }
+
+  h4 {
+    color: var(--gray-dark);
+    margin-bottom: 5px;
+  }
+
+  p {
+    margin: 0.5em 0;
+  }
+
+  ul {
+    list-style-type: disc;
+    padding-left: 1.5em;
+  }
+
+  ul li {
+    margin-bottom: 0.5em;
+  }
+</style>

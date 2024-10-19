@@ -1,31 +1,35 @@
 ---
-// Projects.astro
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import PersonalProject from '../components/PersonalProject.astro';
-import { projects } from "../consts";
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import PersonalProject from "../components/PersonalProject.astro";
+import { PROJECTS } from "../consts";
 ---
 
 <!doctype html>
 <html lang="es">
-    <head>
-        <BaseHead title="My Projects" description="Showcasing my projects and works" />
-    </head>
-    <body>
-        <Header />
-        <main>
-            <h1>Featured Projects</h1>
-            {projects.map(project => (
-                <PersonalProject 
-                    title={project.title} 
-                    description={project.description} 
-                    technologies={project.technologies} 
-                    githubLink={project.githubLink}
-                    documentationLink={project.documentationLink} 
-                />
-            ))}
-        </main>
-        <Footer />
-    </body>
+  <head>
+    <BaseHead
+      title="Zeida | My Projects"
+      description="Showcasing my projects and works"
+    />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <h1>Featured Projects</h1>
+      {
+        PROJECTS.map((project) => (
+          <PersonalProject
+            title={project.title}
+            description={project.description}
+            technologies={project.technologies}
+            githubLink={project.githubLink}
+            documentationLink={project.documentationLink}
+          />
+        ))
+      }
+    </main>
+    <Footer />
+  </body>
 </html>
