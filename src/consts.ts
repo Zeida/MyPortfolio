@@ -207,7 +207,7 @@ export const ACADEMIC_DATA = {
       specialization: "Specialization in Software",
       years: "2015 - 2022",
       description:
-        "Graduated with honors, receiving a special mention for my final project, which focused on [brief description of the project if desired]. This program equipped me with a solid foundation in software development principles, algorithms, and system design.",
+        "Graduated with honors, receiving a special mention for my final project, which focused on mental health. This program equipped me with a solid foundation in software development principles, algorithms, and system design.",
     },
   ],
   certifications: [
