@@ -67,65 +67,137 @@ export const MY_PROFILE_DESCRIPTION = `I am a passionate software engineer who t
     I am committed to innovation and continuous learning to tackle future technological challenges.`;
 
 export const JOBS = [
-    {
-      title: "Programmer Analyst",
-      company: "Bitbox S.L",
-      dates: "February 2021 - November 2022",
-      description: "At Bitbox S.L, I honed my analytical skills while engaging in requirements gathering, functional design, and documentation. My role involved:",
-      responsibilities: [
-        "Developing back-end solutions using Spring Boot and PostgreSQL, ensuring high performance and responsiveness.",
-        "Creating dynamic user interfaces with React, enhancing user experience through intuitive design.",
-        "Collaborating with cross-functional teams to deliver projects on time and meet client expectations."
-      ]
-    },
-    {
-      title: "Programmer",
-      company: "Plexus Tech",
-      dates: "November 2022 - May 2024",
-      description: "As a Programmer at Plexus Tech, I contributed to the development and maintenance of Platino, the interoperability platform for the Government of Canarias. My key responsibilities included:",
-      responsibilities: [
-        "Implementing front-end enhancements using Angular, improving usability and functionality.",
-        "Developing back-end services with Java 8 and participating in the migration to Red Hat Fuse 7.",
-        "Updating and migrating servers to optimize system performance and security."
-      ]
-    }
-  ];
+  {
+    title: "Professional Break",
+    company: "Las Palmas, Canary Islands",
+    dates: "June 2024 - Present",
+    description:
+      "I decided to take a professional break to broaden my horizons and steer my career in new directions. This period allows me to explore different areas within my field, acquire new skills, and develop personal projects aligned with my professional growth. This strategic pause provides an opportunity to innovate, learn, and return to the workforce with a broader and renewed perspective, adding greater value to my future performance.",
+    responsibilities: [
+      "Exploring new career paths and opportunities.",
+      "Developing personal projects to enhance my skill set.",
+      "Acquiring new knowledge and experiences to enrich my professional journey.",
+    ],
+  },
+  {
+    title: "Programmer",
+    company: "Plexus Tech",
+    dates: "November 2022 - May 2024",
+    description:
+      "As a Programmer at Plexus Tech, I contributed to the development and maintenance of Platino, the interoperability platform for the Government of Canarias. My key responsibilities included:",
+    responsibilities: [
+      "Implementing front-end enhancements using Angular, improving usability and functionality.",
+      "Developing back-end services with Java 8 and participating in the migration to Red Hat Fuse 7.",
+      "Updating and migrating servers to optimize system performance and security.",
+    ],
+  },
+  {
+    title: "Leisure and Free-time Monitor",
+    company: "Soy Mamut",
+    dates: "April 2023 - July 2023",
+    description:
+      "I volunteered approximately 150 hours with Soy Mamut, participating in environmental actions, educational camps for schools, diverse learning workshops, and inclusive activities for individuals with functional diversity. Key responsibilities included:",
+    responsibilities: [
+      "Raising awareness about environmental sustainability.",
+      "Conducting workshops in various areas for community education.",
+      "Supporting individuals with functional diversity to promote an inclusive environment.",
+      "Developing leadership, organization, and empathy skills.",
+    ],
+  },
+  {
+    title: "Junior Java Developer",
+    company: "Bitbox (IKEA Sarton)",
+    dates: "February 2021 - November 2022",
+    description:
+      "As a Junior Java Developer at Bitbox, I honed my analytical skills while engaging in requirements gathering, functional design, and documentation. My role involved:",
+    responsibilities: [
+      "Developing back-end solutions using Spring Boot and PostgreSQL, ensuring high performance and responsiveness.",
+      "Creating dynamic user interfaces with React, enhancing user experience through intuitive design.",
+      "Collaborating with cross-functional teams to deliver projects on time and meet client expectations.",
+    ],
+  },
+];
 
 export const PROJECTS = [
-    {
-        title: 'MindCare',
-        description: 'For my final degree project, I developed a software tool that addresses the crucial role of emotional well-being in our daily lives. Understanding that our emotional state can influence our ability to think, feel, and act, this application leverages technology to promote personal well-being. MindCare offers a variety of resources for self-care, emotional support, and social interaction, all enhanced with a unique badge system that motivates users in their personal growth journey. Additionally, it serves as a valuable resource for professionals in therapeutic processes, supporting the promotion of healthy habits.',
-        technologies: [
-            'Marvel App',
-            'Visual Studio Code',
-            'Android Studio',
-            'GitHub',
-            'Expo',
-            'Firebase',
-            'Firestore',
-            'Firebase Authentication',
-            'Microsoft Word',
-            'StarUML',
-            'React Native'
-        ],
-        githubLink:'https://github.com/Zeida/MindCare' ,
-        documentationLink: 'https://accedacris.ulpgc.es/bitstream/10553/117753/1/P%c3%a1ginas%20desdeEII-GII-2022-07_RodriguezMendozaZeida.pdf'
-    },
-
+  {
+    title: "MindCare",
+    description:
+      "For my final degree project, I developed a software tool that addresses the crucial role of emotional well-being in our daily lives. Understanding that our emotional state can influence our ability to think, feel, and act, this application leverages technology to promote personal well-being. MindCare offers a variety of resources for self-care, emotional support, and social interaction, all enhanced with a unique badge system that motivates users in their personal growth journey. Additionally, it serves as a valuable resource for professionals in therapeutic processes, supporting the promotion of healthy habits.",
+    technologies: [
+      "Marvel App",
+      "Visual Studio Code",
+      "Android Studio",
+      "GitHub",
+      "Expo",
+      "Firebase",
+      "Firestore",
+      "Firebase Authentication",
+      "Microsoft Word",
+      "StarUML",
+      "React Native",
+    ],
+    githubLink: "https://github.com/Zeida/MindCare",
+    documentationLink:
+      "https://accedacris.ulpgc.es/bitstream/10553/117753/1/P%c3%a1ginas%20desdeEII-GII-2022-07_RodriguezMendozaZeida.pdf",
+  },
 ];
 
 export const TECHNOLOGIES = [
-    { name: 'Marvel App', link: 'https://marvelapp.com/', icon: 'https://img.shields.io/badge/Marvel%20App-1.0-FF4081?style=flat-square' },
-    { name: 'Visual Studio Code', link: 'https://code.visualstudio.com/', icon: 'https://img.shields.io/badge/VS%20Code-1.78.0-blue?style=flat-square&logo=visualstudiocode' },
-    { name: 'Android Studio', link: 'https://developer.android.com/studio', icon: 'https://img.shields.io/badge/Android%20Studio-2023.1-3DDC84?style=flat-square&logo=androidstudio' },
-    { name: 'GitHub', link: 'https://github.com/', icon: 'https://img.shields.io/badge/GitHub-Profile-black?style=flat-square&logo=github' },
-    { name: 'Expo', link: 'https://expo.dev/', icon: 'https://img.shields.io/badge/Expo-48.0.0-000000?style=flat-square&logo=expo' },
-    { name: 'Firebase', link: 'https://firebase.google.com/', icon: 'https://img.shields.io/badge/Firebase-11.0.0-yellow?style=flat-square&logo=firebase' },
-    { name: 'Firestore', link: 'https://firebase.google.com/products/firestore', icon: 'https://img.shields.io/badge/Firestore-11.0.0-blue?style=flat-square&logo=firestore' },
-    { name: 'Firebase Authentication', link: 'https://firebase.google.com/docs/auth', icon: 'https://img.shields.io/badge/Firebase%20Auth-11.0.0-orange?style=flat-square&logo=firebase' },
-    { name: 'Microsoft Word', link: 'https://www.microsoft.com/en-us/microsoft-365/word', icon: 'https://img.shields.io/badge/Microsoft%20Word-2021-2B579A?style=flat-square&logo=microsoftword' },
-    { name: 'StarUML', link: 'http://staruml.io/', icon: 'https://img.shields.io/badge/StarUML-3.0-blue?style=flat-square&logo=staruml' },
-    { name: 'React Native', link: 'https://reactnative.dev/', icon: 'https://img.shields.io/badge/React%20Native-0.72.3-61DAFB?style=flat-square&logo=react' },
+  {
+    name: "Marvel App",
+    link: "https://marvelapp.com/",
+    icon: "https://img.shields.io/badge/Marvel%20App-1.0-FF4081?style=flat-square",
+  },
+  {
+    name: "Visual Studio Code",
+    link: "https://code.visualstudio.com/",
+    icon: "https://img.shields.io/badge/VS%20Code-1.78.0-blue?style=flat-square&logo=visualstudiocode",
+  },
+  {
+    name: "Android Studio",
+    link: "https://developer.android.com/studio",
+    icon: "https://img.shields.io/badge/Android%20Studio-2023.1-3DDC84?style=flat-square&logo=androidstudio",
+  },
+  {
+    name: "GitHub",
+    link: "https://github.com/",
+    icon: "https://img.shields.io/badge/GitHub-Profile-black?style=flat-square&logo=github",
+  },
+  {
+    name: "Expo",
+    link: "https://expo.dev/",
+    icon: "https://img.shields.io/badge/Expo-48.0.0-000000?style=flat-square&logo=expo",
+  },
+  {
+    name: "Firebase",
+    link: "https://firebase.google.com/",
+    icon: "https://img.shields.io/badge/Firebase-11.0.0-yellow?style=flat-square&logo=firebase",
+  },
+  {
+    name: "Firestore",
+    link: "https://firebase.google.com/products/firestore",
+    icon: "https://img.shields.io/badge/Firestore-11.0.0-blue?style=flat-square&logo=firestore",
+  },
+  {
+    name: "Firebase Authentication",
+    link: "https://firebase.google.com/docs/auth",
+    icon: "https://img.shields.io/badge/Firebase%20Auth-11.0.0-orange?style=flat-square&logo=firebase",
+  },
+  {
+    name: "Microsoft Word",
+    link: "https://www.microsoft.com/en-us/microsoft-365/word",
+    icon: "https://img.shields.io/badge/Microsoft%20Word-2021-2B579A?style=flat-square&logo=microsoftword",
+  },
+  {
+    name: "StarUML",
+    link: "http://staruml.io/",
+    icon: "https://img.shields.io/badge/StarUML-3.0-blue?style=flat-square&logo=staruml",
+  },
+  {
+    name: "React Native",
+    link: "https://reactnative.dev/",
+    icon: "https://img.shields.io/badge/React%20Native-0.72.3-61DAFB?style=flat-square&logo=react",
+  },
 ];
 
 export const ACADEMIC_DATA = {
@@ -134,28 +206,134 @@ export const ACADEMIC_DATA = {
       title: "Bachelor's Degree in Computer Engineering",
       specialization: "Specialization in Software",
       years: "2015 - 2022",
-      description: "Graduated with honors, receiving a special mention for my final project, which focused on [brief description of the project if desired]. This program equipped me with a solid foundation in software development principles, algorithms, and system design."
-    }
+      description:
+        "Graduated with honors, receiving a special mention for my final project, which focused on [brief description of the project if desired]. This program equipped me with a solid foundation in software development principles, algorithms, and system design.",
+    },
   ],
   certifications: [
     {
       title: "SCRUM Master Certification",
       institution: "TheUncoding",
       date: "January 2023",
-      description: "Gained essential knowledge and practical skills for implementing SCRUM methodologies effectively within teams. This certification emphasizes Agile principles, team collaboration, and iterative project management."
-    }
+      description:
+        "Gained essential knowledge and practical skills for implementing SCRUM methodologies effectively within teams. This certification emphasizes Agile principles, team collaboration, and iterative project management.",
+    },
   ],
   courses: [
     {
-      title: "Web Development Courses",
+      title: "Web Development",
       institution: "Bejob and Samsung",
       dates: "November 2020 - June 2021",
-      description: "Completed various courses aimed at enhancing my web development skills, including:",
+      description:
+        "Completed various courses aimed at enhancing my web development skills, including:",
       details: [
         "Introduction to Web Development (50 hours)",
         "Front-End Development with HTML5 and CSS3 (100 hours)",
-        "Full-Stack Development (200 hours), covering JavaScript ES6, TypeScript, JSON, APIs, Angular, Node.js, and REST APIs with Express."
-      ]
-    }
-  ]
+        "Full-Stack Development (200 hours), covering JavaScript ES6, TypeScript, JSON, APIs, Angular, Node.js, and REST APIs with Express.",
+      ],
+    },
+    {
+      title: "REACT",
+      institution: "Fundación Estatal para la Formación en el Empleo",
+      dates: "April 26, 2021 - May 5, 2021",
+      description:
+        "A 25-hour training course on React.js, covering various components and functionalities.",
+      details: [
+        "Topics included: Overview of React.js, MVVM in React, Component Creation and Development, JSX, State Management, and Lifecycle of Components.",
+      ],
+    },
+    {
+      title: "Web Design with HTML5 + CSS",
+      institution: "Zeida de los Reyes Rodriguez Mendoza",
+      date: "October 20, 2024",
+      description:
+        "Acquired skills in web design, focusing on HTML5 and CSS for creating visually appealing and responsive web pages.",
+      details: [
+        "Credential ID: 8b3fbef9-4cff-4962-b5e6-85dc0df7549a",
+      ],
+    },
+    {
+      title: "Fundamentals of Management and Administration",
+      institution: "IES DORAMAS",
+      dates: "September 14, 2014 - May 15, 2015",
+      description:
+        "Completed a course covering key aspects of business management including: Introduction to the Company, Company Creation, Secretary and Filing, Procurement, Marketing, Sales, and Treasury and Financing.",
+      details: [
+        "Duration: 4 hours per week",
+        "Methodology: Theoretical/Practical",
+      ],
+    },
+    {
+      title: "Professionals of the 21st Century: Keys to Facing Today's Labor Challenges",
+      institution: "Radio ECCA and Universidad de Las Palmas de Gran Canaria",
+      dates: "January 25, 2021 - February 10, 2021",
+      description:
+        "A 30-hour course designed to equip participants with essential skills for navigating current job market challenges.",
+      details: [
+        "Credential ID: 5d2690cfc0eeefb001510865ab289e7b",
+      ],
+    },
+    {
+      title: "Can I Help You? (Professional English for Commercial Activities)",
+      institution: "Radio ECCA and Universidad de Las Palmas de Gran Canaria",
+      dates: "February 3, 2020 - February 28, 2020",
+      description:
+        "A 60-hour course focused on enhancing professional English skills for commercial settings.",
+    },
+    {
+      title: "Professional English for Commercial Activities",
+      institution: "ECCA",
+      date: "February 2020",
+      description: "Course focused on enhancing professional English skills for commercial activities.",
+    },
+    {
+      title: "Innovation Managers",
+      institution: "Fundación Universitaria de Las Palmas",
+      date: "September 2020",
+      description: "Course on innovation management.",
+      skills: "Innovation manager",
+    },
+    {
+      title: "PHP Tutorial Course",
+      institution: "Sololearn",
+      date: "April 2019",
+      description: "Introductory course to PHP.",
+      credentialId: "Credential ID: #1059-1350087",
+      details: [
+        "Credential ID: #1059-1350087",,
+      ],
+      skills: "PHP",
+    },
+    {
+      title: "SQL Fundamentals Course",
+      institution: "Sololearn",
+      date: "April 2017",
+      description: "Introductory course to SQL.",
+      credentialId: "Credential ID: #1060-1350087",
+      details: [
+        "Credential ID: #1060-1350087",
+      ],
+      skills: "SQL",
+    },
+  ],
+  extra: [
+    {
+      title: "First Aid Certification",
+      date: "August 23, 2022",
+      description:
+        "Completed a three-hour hands-on training in first aid, certified by the Fundación Estatal para la Formación en el Empleo and provided by Previs.",
+    },
+    {
+      title: "Youth Leisure and Free Time Activities Monitor",
+      institution: "DIRECCIÓN GENERAL JUVENTUD CANARIAS",
+      date: "Social Good (200 hours)",
+      description: "Training in leisure and free time education, courses for monitors, coordinators, etc.",
+    },
+    {
+      title: "Driving License",
+      date: "Carnet B",
+      description: "Authorized to drive motor vehicles.",
+    },
+  ],
 };
+

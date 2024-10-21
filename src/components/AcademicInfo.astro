@@ -5,44 +5,76 @@ const educationData = ACADEMIC_DATA;
 ---
 
 <div class="education-container">
-  <h2 class="text-center mb-4">My Academic Journey</h2>
+  <h1 class="text-center mb-4">My Academic Journey</h1>
 
   <div class="education">
-    {educationData.education.map(degree => (
-      <div class="degree">
-        <h3>{degree.title}</h3>
-        <h4>{degree.specialization}</h4>
-        <p><em>{degree.years}</em></p>
-        <p>{degree.description}</p>
-      </div>
-    ))}
+    <h2 class="section-title">Education</h2>
+    {
+      educationData.education.map((degree) => (
+        <div class="degree">
+          <h3>{degree.title}</h3>
+          <h4>{degree.specialization}</h4>
+          <p>
+            <em>{degree.years}</em>
+          </p>
+          <p>{degree.description}</p>
+        </div>
+      ))
+    }
   </div>
 
   <div class="certifications">
-    <h2 class="text-center mb-4">Certifications</h2>
-    {educationData.certifications.map(certification => (
-      <div class="certification">
-        <h3>{certification.title}</h3>
-        <h4>{certification.institution}</h4>
-        <p><em>{certification.date}</em></p>
-        <p>{certification.description}</p>
-      </div>
-    ))}
+    <h2 class="section-title">Certifications</h2>
+    {
+      educationData.certifications.map((certification) => (
+        <div class="certification">
+          <h3>{certification.title}</h3>
+          <h4>{certification.institution || "N/A"}</h4>
+          <p>
+            <em>{certification.date}</em>
+          </p>
+          <p>{certification.description}</p>
+        </div>
+      ))
+    }
+  </div>
 
-    <h2 class="text-center mb-4">Courses</h2>
-    {educationData.courses.map(course => (
-      <div class="courses">
-        <h3>{course.title}</h3>
-        <h4>{course.institution}</h4>
-        <p><em>{course.dates}</em></p>
-        <p>{course.description}</p>
-        <ul>
-          {course.details.map(detail => (
-            <li>{detail}</li>
-          ))}
-        </ul>
-      </div>
-    ))}
+  <div class="courses">
+    <h2 class="section-title">Courses</h2>
+    {
+      educationData.courses.map((course) => (
+        <div class="course">
+          <h3>{course.title}</h3>
+          <h4>{course.institution || "N/A"}</h4>
+          <p>
+            <em>{course.dates}</em>
+          </p>
+          <p>{course.description}</p>
+          {course.details && course.details.length > 0 && (
+            <ul>
+              {course.details.map((detail) => (
+                <li>{detail}</li>
+              ))}
+            </ul>
+          )}
+        </div>
+      ))
+    }
+  </div>
+
+  <div class="extra">
+    <h2 class="section-title">Additional Qualifications</h2>
+    {
+      educationData.extra.map((extra) => (
+        <div class="extra-certifications">
+          <h3>{extra.title}</h3>
+          <p>
+            <em>{extra.date || "N/A"}</em>
+          </p>
+          <p>{extra.description}</p>
+        </div>
+      ))
+    }
   </div>
 </div>
 
@@ -52,27 +84,48 @@ const educationData = ACADEMIC_DATA;
     flex-direction: column;
     align-items: center;
     margin: 2em 0;
+    padding: 0 1em;
   }
 
-  .degree, .certification, .courses {
+  .section-title {
+    width: 100%;
+    text-align: center;
+    font-size: 1.8em;
+    margin: 1.5em 0 0.5em;
+  }
+
+  .education,
+  .certifications,
+  .courses,
+  .extra {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+ 
+  .degree,
+  .certification,
+  .course,
+  .extra-certifications {
     background-color: var(--background-soft);
     border: 1px solid var(--gray-light);
     border-radius: 8px;
     padding: 20px;
-    margin: 10px 0;
-    width: 100%;
-    max-width: 600px; /* Máximo ancho de la tarjeta */
+    margin: 10px;
+    max-width: 600px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
-  }
-
-  .degree:hover, .certification:hover, .courses:hover {
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    flex: 1 1 calc(100% - 20px); 
   }
 
   h3 {
     color: var(--accent-light);
     margin-bottom: 5px;
+    text-align: center;
   }
 
   h4 {
@@ -87,9 +140,37 @@ const educationData = ACADEMIC_DATA;
   ul {
     list-style-type: disc;
     padding-left: 1.5em;
+    margin: 0; 
   }
 
   ul li {
     margin-bottom: 0.5em;
+  }
+
+  @media (max-width: 768px) {
+    .degree,
+    .certification,
+    .course,
+    .extra-certifications {
+      flex: 1 1 calc(100% - 20px);
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .degree,
+    .certification,
+    .course,
+    .extra-certifications {
+      flex: 1 1 calc(48% - 20px);
+    }
+  }
+
+  @media (min-width: 1025px) {
+    .degree,
+    .certification,
+    .course,
+    .extra-certifications {
+      flex: 1 1 calc(30% - 20px);
+    }
   }
 </style>
