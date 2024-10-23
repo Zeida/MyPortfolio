@@ -8,6 +8,7 @@
    --accent-light: #ff6f61;
    --accent: #04395e;
    --accent-dark: #031d44;
+   --gray: #7f7f7f;
 
    --gray-light: #d9d9d9;
    --gray-dark: #7f7f7f;
@@ -26,6 +27,7 @@ html.dark {
    --accent: #86b2f4;
    --accent-dark: #031d44;
 
+   --gray: #d9d9d9;
    --gray-light: #b0b0b0;
    --gray-dark:#4a4a4a ;
 }
