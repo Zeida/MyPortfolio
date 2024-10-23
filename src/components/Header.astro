@@ -3,18 +3,20 @@ import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
 import ThemeToggleIcon from './ThemeToggleIcon.astro';
 ---
-
 <header>
 	<nav>
-		<h2>{SITE_TITLE}</h2>
-		<div class="internal-links">
-			<HeaderLink href="/MyPortfolio/">Hi!👋</HeaderLink>
-			<HeaderLink href="/MyPortfolio/job-experience">Jobs Roadmap🧑‍💻</HeaderLink>
-			<HeaderLink href="/MyPortfolio/personal-projects">Projects💻</HeaderLink>
-			<HeaderLink href="/MyPortfolio/academic-journey">Academic journey🎓</HeaderLink>
-			<HeaderLink href="/MyPortfolio/about-me">About me😀</HeaderLink>
-			<HeaderLink href="/MyPortfolio/network-hub">Network hub📩</HeaderLink>
-		</div>
-		<ThemeToggleIcon />
+	  <h2>{SITE_TITLE}</h2>
+	  <div class="internal-links desktop-menu">
+		<HeaderLink href="/MyPortfolio/">Hi!👋</HeaderLink>
+		<HeaderLink href="/MyPortfolio/job-experience">Jobs Roadmap🧑‍💻</HeaderLink>
+		<HeaderLink href="/MyPortfolio/personal-projects">Projects💻</HeaderLink>
+		<HeaderLink href="/MyPortfolio/academic-journey">Academic journey🎓</HeaderLink>
+		<HeaderLink href="/MyPortfolio/about-me">About me😀</HeaderLink>
+		<HeaderLink href="/MyPortfolio/network-hub">Network hub📩</HeaderLink>
+	  </div>
+
+	  <ThemeToggleIcon />
 	</nav>
-</header>
+  </header>
+
+  
