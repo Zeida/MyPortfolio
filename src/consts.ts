@@ -244,7 +244,7 @@ export const ACADEMIC_DATA = {
     },
     {
       title: "Web Design with HTML5 + CSS",
-      institution: "Zeida de los Reyes Rodriguez Mendoza",
+      institution: "Fundación Telefónica",
       date: "October 20, 2024",
       description:
         "Acquired skills in web design, focusing on HTML5 and CSS for creating visually appealing and responsive web pages.",
