@@ -105,11 +105,11 @@ export const JOBS = [
     ],
   },
   {
-    title: "Junior Java Developer",
+    title: "Programmer Analyst",
     company: "Bitbox (IKEA Sarton)",
     dates: "February 2021 - November 2022",
     description:
-      "As a Junior Java Developer at Bitbox, I honed my analytical skills while engaging in requirements gathering, functional design, and documentation. My role involved:",
+      "As a Programmer analyst at Bitbox, I honed my analytical skills while engaging in requirements gathering, functional design, and documentation. My role involved:",
     responsibilities: [
       "Developing back-end solutions using Spring Boot and PostgreSQL, ensuring high performance and responsiveness.",
       "Creating dynamic user interfaces with React, enhancing user experience through intuitive design.",
